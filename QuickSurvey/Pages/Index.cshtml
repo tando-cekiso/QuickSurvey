@@ -1,0 +1,96 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-2">
+    <h1>Employee Product Recommendation Portal</h1>
+    <button type="button" id="add-new" class="btn btn-link btn-primary">+Add new Product</button>
+    <form id="init-form">
+        <div class="mb-2">
+            <label for="productChoice" class="form-label">Select a product</label>
+            <select class ="form-control" id="productChoice">
+                <option>Projector Dlp XGA</option>
+                <option>ASUS-ROG-Rapture-WiFi-6E</option>
+                <option>15376-V2-0-60Hz-Switch</option>
+               
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="feedback" class="form-label">Your Feedback</label>
+            <textarea class="form-control" id="feedback" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Next</button>
+    </form>
+    <h3 id="message">Our company is introducing a portal for employees to recommend products that they would like to see on the shopfloor.
+        We value your input as you understand our customers better.</h3>
+  
+</div>
+
+<!--
+    Employee add new product to recommend
+-->
+
+<div class="modal" id="addproductModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add new product recommendation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="newProduct" class="form-control" placeholder="Enter product name" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="saveProduct">Save</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Add product modal -->
+<div class="modal" id="addproductModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add new product recommendation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="newProduct" class="form-control" placeholder="Enter product name" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="saveProduct">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Employeee info -->
+<div id="contact-info" style="display:none;">
+    <!-- When user click next this form will display -->
+    <h2>Enter Your Contact Information</h2>
+    <form id="contact-form">
+        <div class="mb-2">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-2">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+       
+
+<script src="js/scripts.js"></script>

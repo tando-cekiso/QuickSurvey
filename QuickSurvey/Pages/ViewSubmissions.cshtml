@@ -1,0 +1,32 @@
+﻿@page
+@model ViewSubmissionsModel
+@{
+    ViewData["Title"] = "View Submissions";
+}
+
+<div class="container mt-2">
+    <h1>Submitted Feedback</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Feedback</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var submission in Model.Submissions)
+            {
+                <tr>
+                    <td>@submission.Product</td>
+                    <td>@submission.Feedback</td>
+                    <td>@submission.Name</td>
+                    <td>@submission.Email</td>
+                    <td>@submission.Phone</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
