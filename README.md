@@ -1,10 +1,10 @@
 # QuickSurvey App
 
-# For business use-case where employees can recommend new products that can be sold
+### For business use-case where employees can recommend new products that can be sold
 
-# Link to web app:
+### Link to web app:
 
-# Project Contents
+### Project Contents
 ASP.NET Core Application 
 Controller addition for API endpoint implementation
 ViewModel (ViewSubmissions.chtml.cs)
@@ -15,5 +15,5 @@ Program.cs :  builder.Services.AddControllers();
 *Ajax
 
 
-# Installation
+## Installation
 Download zip file for local use
