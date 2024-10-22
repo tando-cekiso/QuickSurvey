@@ -1,0 +1,115 @@
+html, body {
+  
+}
+@media (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+
+
+element.style {
+    max-width: 50%;
+}
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+#add-new {
+    color: darkblue;
+    background-color:white;
+      border:none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+label {
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+    
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 10px;
+}
+
+button {
+    border-radius: 6px;
+ 
+}
+
+
+
+label.form-label {
+    color: black;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.sidebar {
+    background-color: whitesmoke;
+    max-width:800px; 
+  
+   
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+.list-group-item.active {
+        background-color: lightgray;
+        border: none;
+        color: white;
+    }
+
+.form-step {
+    
+    border: 1px solid #e3e6f0;
+    
+    padding: 20px;
+
+}
+
+#price{
+    padding-top:1%;
+}
+
+#deliveryDate{
+    padding-top:1%;
+}
+
+
+
+.btn {
+  
+    min-width: 150px;
+    margin: 0 5px; 
+}
