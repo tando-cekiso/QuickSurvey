@@ -2,7 +2,7 @@
 
 ### For business use-case where employees can recommend new products that can be sold
 
-### Link to web app:
+### 
 
 ### Project Contents
 ASP.NET Core Application 
